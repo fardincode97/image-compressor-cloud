@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DCompressor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="logo">
+    <h1>D</h1>
+    <h4>Compressor</h4>
+  </div>
+
+  <div class="hero">
+    <h2>Image Compressor Online</h2>
+    <h4>Reduce the size of an image by adjusting its quality.</h4>
+      <h5>(only jpg format)</h5>
+  </div>
+
+  <div class="wrapper">
+    <p id="status-msg" style="text-align:center; margin-top: 20px;"></p>
+
+    <div class="upload-box">
+      <input type="file" accept="image/*" hidden />
+      <img src="upload.icon.png" alt="Upload Icon" />
+      <p><big><b>Browse File to Upload</b></big></p>
+    </div>
+
+    <div class="content">
+      <div class="row sizes">
+        <div class="column width">
+          <label><b>Width</b></label>
+          <input type="number" />
+        </div>
+        <div class="column height">
+          <label><b>Height</b></label>
+          <input type="number" />
+        </div>
+      </div>
+
+      <div class="row checkboxes">
+        <div class="column ratio">
+          <input type="checkbox" id="ratio" checked />
+          <label for="ratio"><b>Lock aspect ratio</b></label>
+        </div>
+        <div class="column quality">
+          <input type="checkbox" id="quality" checked/>
+          <label for="quality"><b>Reduce quality</b></label>
+        </div>
+      </div>
+
+      <button class="download-btn">Upload & Compress</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
