@@ -4,6 +4,10 @@
 A web-based image compressor that uploads and compresses images using **AWS Lambda**, **S3**, and **API Gateway**.
 
 ---
+## 🌐 Live Demo
+
+[Click Here to Use the Image Compressor](https://fardin-image-compressor.netlify.app)
+
 
 ## 🚀 Features
 
